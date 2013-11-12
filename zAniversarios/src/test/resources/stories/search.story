@@ -7,7 +7,7 @@ Desejo acessar o Aniversariantes
 
 Cenário: Login
 
-Dado que vou para a tela "Tela de Aniversariantes"
+Dado que vou para a tela "Tela de Login"
 Quando informo "usuario" no campo "Nome do Usuário"
 Quando informo "senha" no campo "Senha"
 Quando clico em "Acessar"
