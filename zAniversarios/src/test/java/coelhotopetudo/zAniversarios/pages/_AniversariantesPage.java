@@ -12,7 +12,7 @@ public class _AniversariantesPage {
 	@ElementMap(name = "Campo de Busca", locatorType = ElementLocatorType.Id, locator = "gbqfq")
 	private TextField searchField;
 
-	@ElementMap(name = "Estou com sorte", locatorType = ElementLocatorType.Id, locator = "gbqfbb")
+	@ElementMap(name = "Link", locatorType = ElementLocatorType.XPath, locator = "id('content')/div[@id=('parent-fieldname-text')]/div/a[contains(text(), '%param1%')]")
 	private Button buttonLuckSearch;
 
 }
