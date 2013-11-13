@@ -1,0 +1,32 @@
+package ztest.edbv_drools;
+//generated from Decision Table
+import ztest.edbv_drools.DroolsBdd.Paises;
+import ztest.edbv_drools.DroolsBdd.Bagagem;
+import ztest.edbv_drools.DroolsBdd.Resultado;
+global ztest.edbv_drools.DroolsBdd.Resultado resultado;
+// rule values at B14, header at B9
+rule "Paises e Bagagem_14"
+	when
+		pais : Paises(origem == "EUA", residencia == "Brasil")
+		bag : Bagagem(pesoBagagem == "10")
+	then
+		resultado.setPeso(5);
+end
+
+// rule values at B15, header at B9
+rule "Paises e Bagagem_15"
+	when
+		pais : Paises(origem == "EUA", residencia == "EUA")
+	then
+		resultado.setPeso(1);
+end
+
+// rule values at B16, header at B9
+rule "Paises e Bagagem_16"
+	when
+		pais : Paises(origem == "Franca", residencia == "Brasil")
+		bag : Bagagem(pesoBagagem == "5")
+	then
+		resultado.setPeso(3);
+end
+
