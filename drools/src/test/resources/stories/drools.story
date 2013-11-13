@@ -8,17 +8,15 @@ Cenário: Carregar planilha de regras
 Quando inicio o motor de regras
 Então o motor de regras dirá "Iniciei"
 
-Cenário: Franca Brasil cinco quilos
+Cenário: Execução das regras
+Dado que a origem do viajante é "<ORIGEM>"
+Dado que o país de residência do viajante é "<RESIDENCIA>"
+Dado que a quantidade de bagagem é "<BAGAGEM>"
+Quando solicito a execução das regras
+Então seu valor será "<PESO>"
 
-Quando informo origem-residencia-bagagem "Franca-Brasil-5"
-Então seu valor será "3"
-
-Cenário: EUA Brasil dez quilos
-
-Quando informo origem-residencia-bagagem "EUA-Brasil-10"
-Então seu valor será "5"
-
-Cenário: EUA EUA nada
-
-Quando informo origem-residencia-bagagem "EUA-EUA- "
-Então seu valor será "1"
+Exemplos:
+|ORIGEM|RESIDENCIA|BAGAGEM|PESO|
+|Franca|Brasil|5|3|
+|EUA|Brasil|10|5|
+|EUA|EUA|1|1|
