@@ -1,2 +1,2 @@
 language: java
-mvn inscricao test
+  mvn inscricao test
